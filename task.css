@@ -1,164 +1,110 @@
-*{
-    padding: 0px;
-    margin: 0px;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: black;
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
-.logo{
-    font-size: 2rem;
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
 }
-nav{
-    background-color: rgb(143, 5, 104);
-    color: rgb(255, 255, 255);
+
+nav {
     display: flex;
-    padding: 35px;
     justify-content: space-between;
-}
-.content,ul,li{
-    display: flex;
-    gap: 10px;    
-}
-@media (max-width: 600px) {
-    nav{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    
-}
-@media (max-width: 600px) {
-    .content,ul,li{
-        flex-direction: column;
-        align-items: center;
-    }
-    
-}
-.hero{
-    margin: 10px;
-    border: 6px white solid;
-    height: 750px;
-    width: 1500px;
-    border-radius: 8px;
-}
-img{
-    border: 6px yellow solid;
-    border-radius: 18px;
-    height: 700px;
-    margin: 10px;
-    float: right;
-}
-#head{
-    color: white;
-    background-color: blueviolet;
-    padding: 30px;
-    border: 6px white solid;
-    border-radius: 10px;
-}
-#para1{
-    color: aliceblue;
-    background-color: rgb(111, 3, 57);
-    padding: 50px;
-    border: 6px white solid;
-    border-radius: 10px;
-}
-#para2{
-    color: rgb(255, 255, 255);
-    background-color: blue;
-    padding: 50px;
-    border: 6px white solid;
-    border-radius: 10px;
-}
-.place-1{
-    float: left;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 800px;
     align-items: center;
-    margin: 30px;
 }
-.button{
+
+nav ul {
+    list-style: none;
     display: flex;
-    gap: 100px;
-    align-items: flex-end;
+    gap: 1rem;
 }
-.bt{
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://source.unsplash.com/1600x900/?nature') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px;
-    background-color: aqua;
-    border: 6px white solid;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: #ff5722;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e64a19;
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 2rem;
     border-radius: 10px;
-    width: 100px;
-    margin-top: 100px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    transition: transform 0.3s;
 }
-.works{
-     margin: 10px;
-    border: 6px white solid;
-    height: 350px;
-    width: 1500px;
-    border-radius: 8px;
+
+.card:hover {
+    transform: translateY(-10px);
 }
-.jaga{
+
+/* Footer */
+footer {
+    background: #333;
     color: white;
     text-align: center;
-    margin-top: 8px;
+    padding: 1rem;
 }
-.area-1{background-color: orange;
-     color: white; 
-     text-align: center; 
-     border: 5px white solid;
-     border-radius: 8px;
-     width: 100px;
-     padding: 25px;
-    }
-    .area-2{background-color: rgb(85, 5, 244);
-     color: white; 
-     text-align: center; 
-     border: 5px white solid;
-     border-radius: 8px;
-     width: 100px;
-     padding: 25px;
-    }
-    .area-3{background-color: rgb(225, 255, 1);
-     color: white; 
-     text-align: center; 
-     border: 5px white solid;
-     border-radius: 8px;
-     width: 100px;
-     padding: 25px;
-    }
-    .area-4{background-color: rgb(6, 184, 244);
-     color: white; 
-     text-align: center; 
-     border: 5px white solid;
-     border-radius: 8px;
-     width: 100px;
-     padding: 25px;
-    }
-    .front{
-        display: flex;
-        width: 800px;
-        height: 100px;
-        border: 8px rgb(240, 11, 11) solid;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: 20px;
-        padding: 10px;
-        color: white;
-        border-radius: 10px;
-    }
-        .Back{
-        display: flex;
-        width: 800px;
-        height: 100px;
-        border: 8px rgb(236, 6, 6) solid;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: 20px;
-        padding: 10px;
-        color: white;
-        float: right;
-        border-radius: 10px;
-    }
-    
